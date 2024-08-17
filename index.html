@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Timed Text</title>
+    <style>
+        .text-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <video id="myVideo" width="auto" height="400" controls playsinline>
+        <source src="./0817.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="textContainer" class="text-container"></div>
+
+    <button id="playButton">Play Video</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
